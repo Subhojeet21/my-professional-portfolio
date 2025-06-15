@@ -39,32 +39,35 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-16 fade-in-section">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">Featured Projects</h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             A showcase of recent projects demonstrating technical expertise and problem-solving skills
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img 
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+            <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group fade-in-section">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">{project.title}</h3>
+                <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-medium"
+                      className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-300 text-sm rounded-full font-medium border border-blue-500/30"
                     >
                       {tech}
                     </span>
@@ -72,11 +75,11 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <Button variant="default" className="flex items-center space-x-2">
+                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white flex items-center space-x-2 hover-lift">
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
                   </Button>
-                  <Button variant="outline" className="flex items-center space-x-2">
+                  <Button variant="outline" className="glass-card border-blue-400/30 text-blue-400 hover:bg-blue-400/10 flex items-center space-x-2 hover-lift">
                     <Github size={16} />
                     <span>Source Code</span>
                   </Button>

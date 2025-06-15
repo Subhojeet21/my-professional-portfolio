@@ -54,37 +54,37 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-16 fade-in-section">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">Professional Experience</h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             A journey of continuous learning and growth in software development
           </p>
         </div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500 hidden md:block"></div>
           
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-start">
+              <div key={index} className="relative flex items-start fade-in-section">
                 {/* Timeline dot */}
-                <div className="hidden md:flex absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="hidden md:flex absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-4 border-slate-900 shadow-lg z-10"></div>
                 
-                <div className="md:ml-20 bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full">
+                <div className="md:ml-20 glass-card rounded-xl p-8 hover-lift w-full group">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2 lg:mb-0">
+                    <h3 className="text-2xl font-bold text-white mb-2 lg:mb-0 group-hover:text-blue-400 transition-colors duration-300">
                       {exp.title}
                     </h3>
-                    <div className="flex items-center text-blue-600 font-semibold">
+                    <div className="flex items-center text-blue-400 font-semibold">
                       <Calendar size={16} className="mr-2" />
                       {exp.duration}
                     </div>
                   </div>
                   
-                  <div className="flex flex-col sm:flex-row sm:items-center mb-4 text-gray-600">
+                  <div className="flex flex-col sm:flex-row sm:items-center mb-4 text-gray-400">
                     <div className="flex items-center mb-2 sm:mb-0 sm:mr-6">
                       <Building size={16} className="mr-2" />
                       {exp.company}
@@ -97,8 +97,8 @@ const Experience = () => {
                   
                   <ul className="space-y-2">
                     {exp.description.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-gray-700 flex items-start">
-                        <span className="text-blue-600 mr-2 mt-2">•</span>
+                      <li key={itemIndex} className="text-gray-300 flex items-start">
+                        <span className="text-blue-400 mr-3 mt-2 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
