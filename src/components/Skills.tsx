@@ -7,7 +7,6 @@ const Skills = () => {
         "React", "TypeScript", "Next.js", "Vue.js", 
         "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular"
       ],
-      color: "blue"
     },
     {
       title: "Backend Development", 
@@ -15,7 +14,6 @@ const Skills = () => {
         "Node.js", "Python", "Java", "Express.js",
         "Django", "Spring Boot", "REST APIs", "GraphQL"
       ],
-      color: "blue"
     },
     {
       title: "Database & Cloud",
@@ -23,7 +21,6 @@ const Skills = () => {
         "PostgreSQL", "MongoDB", "MySQL", "AWS",
         "Azure", "Docker", "Kubernetes", "Redis"
       ],
-      color: "blue"
     },
     {
       title: "Tools & Technologies",
@@ -31,85 +28,63 @@ const Skills = () => {
         "Git", "CI/CD", "Terraform", "Jenkins",
         "Webpack", "Linux", "Monitoring", "Testing"
       ],
-      color: "blue"
     }
   ];
 
   return (
-    <section id="skills" className="py-24 relative">
+    <section id="skills" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 fade-in-section">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-blue-700 text-sm font-medium tracking-wide mb-8">
-            <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-            Technical Expertise
+          <div className="inline-block mb-6">
+            <span className="text-blue-400 font-semibold tracking-wider uppercase text-sm">
+              Technical Expertise
+            </span>
+            <div className="w-1/2 h-0.5 bg-blue-400 mx-auto mt-1"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
             Skills & Technologies
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            A comprehensive skill set built over 13+ years of professional development
+          <p className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
+            A comprehensive skill set built over 13+ years of professional development, focused on creating robust, scalable, and modern web applications.
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="space-y-12">
+        <div className="space-y-16">
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="fade-in-section">
               {/* Category Header */}
-              <div className="mb-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-1 h-8 bg-blue-500 rounded-full mr-4"></div>
-                  <h3 className="text-2xl font-bold text-slate-800">
-                    {category.title}
-                  </h3>
-                </div>
-                <div className="h-px bg-gradient-to-r from-slate-200 via-slate-300 to-transparent"></div>
+              <div className="mb-12 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-200 tracking-wide inline-block relative">
+                  {category.title}
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-1/3 bg-blue-500"></div>
+                </h3>
               </div>
               
               {/* Skills Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex} 
-                    className="group relative"
+                    className="group"
                   >
                     <div className="
-                      bg-white border border-slate-200 rounded-lg p-4 h-16
-                      flex items-center justify-center
-                      shadow-sm hover:shadow-md
-                      transition-all duration-300 ease-out
-                      hover:border-blue-300 hover:-translate-y-1
-                      cursor-pointer relative overflow-hidden
+                      bg-slate-800/40 border border-slate-700 rounded-lg p-4 h-24
+                      flex items-center justify-center text-center
+                      transition-all duration-300 ease-in-out
+                      hover:bg-slate-700/60 hover:border-blue-500 hover:-translate-y-1
+                      hover:shadow-lg hover:shadow-blue-500/10
                     ">
-                      {/* Subtle hover background */}
-                      <div className="absolute inset-0 bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      
-                      {/* Skill text */}
-                      <span className="relative z-10 text-slate-700 font-medium text-sm text-center leading-tight group-hover:text-blue-700 transition-colors duration-300">
+                      <span className="text-slate-300 font-medium text-sm sm:text-base group-hover:text-white transition-colors duration-300">
                         {skill}
                       </span>
-                      
-                      {/* Subtle left border accent */}
-                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-l-lg"></div>
                     </div>
-                    
-                    {/* Enhanced shadow on hover */}
-                    <div className="absolute inset-0 bg-blue-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10"></div>
                   </div>
                 ))}
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom decorative element */}
-        <div className="mt-20 flex justify-center">
-          <div className="flex space-x-2">
-            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-            <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
-            <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
-          </div>
         </div>
       </div>
     </section>
