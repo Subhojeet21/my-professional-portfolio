@@ -34,20 +34,14 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-20 fade-in-section">
-          <div className="inline-block mb-6">
-            <span className="text-blue-400 font-semibold tracking-wider uppercase text-sm">
-              Technical Expertise
-            </span>
-            <div className="w-1/2 h-0.5 bg-blue-400 mx-auto mt-1"></div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
+        <div className="text-center mb-16 fade-in-section">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
             Skills & Technologies
           </h2>
-          <p className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             A comprehensive skill set built over 13+ years of professional development, focused on creating robust, scalable, and modern web applications.
           </p>
         </div>
