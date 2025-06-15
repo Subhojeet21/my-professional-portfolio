@@ -42,6 +42,9 @@ const Projects = () => {
     <section id="projects" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 fade-in-section">
+          <div className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-blue-300 text-sm font-medium tracking-wide mb-6">
+            My Work
+          </div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             A showcase of recent projects demonstrating technical expertise and problem-solving skills
