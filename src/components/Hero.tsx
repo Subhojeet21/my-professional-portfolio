@@ -53,7 +53,7 @@ const Hero = () => {
           
           <div className="flex justify-center mb-8">
             <Avatar className="w-40 h-40 border-4 border-blue-500/30 shadow-lg bg-slate-900">
-              <AvatarImage src="/placeholder.svg" alt="John Smith" />
+              <AvatarImage src="/placeholder.svg" alt="Subhojeet Ghosh" />
               <AvatarFallback className="bg-transparent">
                 <User className="w-20 h-20 text-slate-400" />
               </AvatarFallback>
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight">
-            John Smith
+            Subhojeet Ghosh
           </h1>
           
           <div className="h-20 mb-8">
@@ -99,8 +99,8 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-8">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+              { icon: Github, href: "https://github.com/Subhojeet21", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/subhojeet-ghosh-salesforce-professional/", label: "LinkedIn" },
               { icon: Mail, href: "mailto:john@example.com", label: "Email" }
             ].map((social, index) => (
               <a 
