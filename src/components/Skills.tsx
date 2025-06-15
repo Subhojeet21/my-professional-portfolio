@@ -60,27 +60,33 @@ const Skills = () => {
                 </h3>
               </div>
               
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex} 
                     className="group/skill relative"
                   >
                     <div className={`
-                      w-20 h-20 rounded-full bg-gradient-to-br ${category.gradient} 
-                      flex items-center justify-center text-white font-semibold text-xs text-center
-                      shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110
-                      cursor-pointer border-2 border-white/10 hover:border-white/30
-                      group-hover/skill:animate-pulse
+                      h-16 rounded-xl bg-gradient-to-r ${category.gradient} 
+                      flex items-center justify-center text-white font-semibold text-sm
+                      shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105
+                      cursor-pointer border border-white/10 hover:border-white/30
+                      backdrop-blur-sm relative overflow-hidden
                     `}>
-                      <span className="px-1 leading-tight">{skill}</span>
+                      {/* Subtle pattern overlay */}
+                      <div className="absolute inset-0 bg-white/5 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
+                      
+                      <span className="relative z-10 font-medium tracking-wide">{skill}</span>
+                      
+                      {/* Animated border */}
+                      <div className="absolute inset-0 rounded-xl border-2 border-transparent bg-gradient-to-r from-white/20 to-white/10 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     
-                    {/* Glow effect on hover */}
+                    {/* Enhanced glow effect on hover */}
                     <div className={`
-                      absolute inset-0 w-20 h-20 rounded-full bg-gradient-to-br ${category.gradient}
-                      opacity-0 group-hover/skill:opacity-30 transition-opacity duration-300
-                      blur-xl -z-10
+                      absolute inset-0 h-16 rounded-xl bg-gradient-to-r ${category.gradient}
+                      opacity-0 group-hover/skill:opacity-40 transition-all duration-300
+                      blur-xl -z-10 scale-110
                     `}></div>
                   </div>
                 ))}
