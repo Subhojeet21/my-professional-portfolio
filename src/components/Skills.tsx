@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Skills = () => {
@@ -54,9 +53,8 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <Card key={categoryIndex} className="bg-slate-900/50 border-slate-800 fade-in-section flex flex-col">
               <CardHeader className="text-center p-3">
-                <CardTitle className="text-xl md:text-2xl font-bold text-slate-200 tracking-wide inline-block relative">
+                <CardTitle className="text-xl md:text-2xl font-bold text-slate-200 tracking-wide inline-block">
                   {category.title}
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-1/3 bg-blue-500"></div>
                 </CardTitle>
               </CardHeader>
               
