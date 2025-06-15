@@ -51,11 +51,11 @@ const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="space-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="fade-in-section">
               {/* Category Header */}
-              <div className="mb-12 text-center">
+              <div className="mb-8 text-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-200 tracking-wide inline-block relative">
                   {category.title}
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-1/3 bg-blue-500"></div>
@@ -63,7 +63,7 @@ const Skills = () => {
               </div>
               
               {/* Skills Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex} 
