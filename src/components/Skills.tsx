@@ -3,36 +3,19 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "Vue.js", level: 85 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 90 }
-      ]
+      skills: ["React", "TypeScript", "Next.js", "Vue.js", "HTML/CSS", "Tailwind CSS", "JavaScript", "Angular"]
     },
     {
-      title: "Backend Development",
-      skills: [
-        { name: "Node.js", level: 92 },
-        { name: "Python", level: 88 },
-        { name: "Java", level: 85 },
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 87 },
-        { name: "GraphQL", level: 85 }
-      ]
+      title: "Backend Development", 
+      skills: ["Node.js", "Python", "Java", "Express.js", "Django", "Spring Boot", "REST APIs", "GraphQL"]
     },
     {
-      title: "Cloud & DevOps",
-      skills: [
-        { name: "AWS", level: 90 },
-        { name: "Docker", level: 88 },
-        { name: "Kubernetes", level: 82 },
-        { name: "CI/CD", level: 85 },
-        { name: "Terraform", level: 80 },
-        { name: "Monitoring", level: 85 }
-      ]
+      title: "Database & Cloud",
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "AWS", "Azure", "Docker", "Kubernetes", "Redis"]
+    },
+    {
+      title: "Tools & Technologies",
+      skills: ["Git", "CI/CD", "Terraform", "Jenkins", "Webpack", "Linux", "Monitoring", "Testing"]
     }
   ];
 
@@ -46,28 +29,16 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="glass-card rounded-2xl p-8 hover-lift fade-in-section">
               <h3 className="text-2xl font-semibold text-white mb-6 text-center">
                 {category.title}
               </h3>
-              <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-blue-400 font-semibold">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                      <div 
-                        className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-out hover:shadow-lg hover:shadow-blue-500/50"
-                        style={{ 
-                          width: `${skill.level}%`,
-                          animation: `fadeInUp 1s ease-out ${skillIndex * 0.1}s both`
-                        }}
-                      ></div>
-                    </div>
+                  <div key={skillIndex} className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg p-3 text-center border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300">
+                    <span className="text-gray-300 font-medium">{skill}</span>
                   </div>
                 ))}
               </div>
