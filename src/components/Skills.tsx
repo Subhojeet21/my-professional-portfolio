@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Skills = () => {
@@ -6,28 +7,32 @@ const Skills = () => {
       title: "Frontend Development",
       skills: [
         "React", "TypeScript", "Next.js", "Vue.js", 
-        "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular"
+        "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular",
+        "LWC", "Aura Components", "Visualforce"
       ],
     },
     {
       title: "Backend Development", 
       skills: [
         "Node.js", "Python", "Java", "Express.js",
-        "Django", "Spring Boot", "REST APIs", "GraphQL"
+        "Django", "Spring Boot", "REST APIs", "GraphQL",
+        "Apex", "SOQL", "Platform Events"
       ],
     },
     {
       title: "Database & Cloud",
       skills: [
         "PostgreSQL", "MongoDB", "MySQL", "AWS",
-        "Azure", "Docker", "Kubernetes", "Redis"
+        "Azure", "Docker", "Kubernetes", "Redis",
+        "Salesforce Platform", "Heroku"
       ],
     },
     {
       title: "Tools & Technologies",
       skills: [
         "Git", "CI/CD", "Terraform", "Jenkins",
-        "Webpack", "Linux", "Monitoring", "Testing"
+        "Webpack", "Linux", "Monitoring", "Testing",
+        "Salesforce DX", "Salesforce CLI", "Copado"
       ],
     }
   ];
@@ -89,3 +94,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
