@@ -1,4 +1,6 @@
 
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 const Skills = () => {
   const skillCategories = [
     {
@@ -53,37 +55,37 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="fade-in-section">
-              {/* Category Header */}
-              <div className="mb-8 text-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-200 tracking-wide inline-block relative">
+            <Card key={categoryIndex} className="bg-slate-900/50 border-slate-800 fade-in-section flex flex-col">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-slate-200 tracking-wide inline-block relative">
                   {category.title}
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-1/3 bg-blue-500"></div>
-                </h3>
-              </div>
+                </CardTitle>
+              </CardHeader>
               
-              {/* Skills Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex} 
-                    className="group"
-                  >
-                    <div className="
-                      bg-slate-800/40 border border-slate-700 rounded-lg p-4 h-24
-                      flex items-center justify-center text-center
-                      transition-all duration-300 ease-in-out
-                      hover:bg-slate-700/60 hover:border-blue-500 hover:-translate-y-1
-                      hover:shadow-lg hover:shadow-blue-500/10
-                    ">
-                      <span className="text-slate-300 font-medium text-sm sm:text-base group-hover:text-white transition-colors duration-300">
-                        {skill}
-                      </span>
+              <CardContent className="flex-grow">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skillIndex} 
+                      className="group"
+                    >
+                      <div className="
+                        bg-slate-800/40 border border-slate-700 rounded-lg p-4 h-24
+                        flex items-center justify-center text-center
+                        transition-all duration-300 ease-in-out
+                        hover:bg-slate-700/60 hover:border-blue-500 hover:-translate-y-1
+                        hover:shadow-lg hover:shadow-blue-500/10
+                      ">
+                        <span className="text-slate-300 font-medium text-sm sm:text-base group-hover:text-white transition-colors duration-300">
+                          {skill}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
