@@ -7,7 +7,7 @@ const Skills = () => {
         "React", "TypeScript", "Next.js", "Vue.js", 
         "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular"
       ],
-      gradient: "from-blue-500 to-cyan-500"
+      color: "blue"
     },
     {
       title: "Backend Development", 
@@ -15,7 +15,7 @@ const Skills = () => {
         "Node.js", "Python", "Java", "Express.js",
         "Django", "Spring Boot", "REST APIs", "GraphQL"
       ],
-      gradient: "from-green-500 to-emerald-500"
+      color: "blue"
     },
     {
       title: "Database & Cloud",
@@ -23,7 +23,7 @@ const Skills = () => {
         "PostgreSQL", "MongoDB", "MySQL", "AWS",
         "Azure", "Docker", "Kubernetes", "Redis"
       ],
-      gradient: "from-purple-500 to-pink-500"
+      color: "blue"
     },
     {
       title: "Tools & Technologies",
@@ -31,63 +31,71 @@ const Skills = () => {
         "Git", "CI/CD", "Terraform", "Jenkins",
         "Webpack", "Linux", "Monitoring", "Testing"
       ],
-      gradient: "from-orange-500 to-red-500"
+      color: "blue"
     }
   ];
 
   return (
     <section id="skills" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-20 fade-in-section">
-          <div className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-blue-300 text-sm font-medium tracking-wide mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-blue-700 text-sm font-medium tracking-wide mb-8">
+            <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
             Technical Expertise
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Skills & Technologies
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             A comprehensive skill set built over 13+ years of professional development
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        {/* Skills Grid */}
+        <div className="space-y-12">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="glass-card rounded-3xl p-8 hover-lift fade-in-section border border-gray-700/50 group">
-              <div className="flex items-center mb-8">
-                <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${category.gradient} mr-4`}></div>
-                <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
-                  {category.title}
-                </h3>
+            <div key={categoryIndex} className="fade-in-section">
+              {/* Category Header */}
+              <div className="mb-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-1 h-8 bg-blue-500 rounded-full mr-4"></div>
+                  <h3 className="text-2xl font-bold text-slate-800">
+                    {category.title}
+                  </h3>
+                </div>
+                <div className="h-px bg-gradient-to-r from-slate-200 via-slate-300 to-transparent"></div>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Skills Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex} 
-                    className="group/skill relative"
+                    className="group relative"
                   >
-                    <div className={`
-                      h-16 rounded-xl bg-gradient-to-r ${category.gradient} 
-                      flex items-center justify-center text-white font-semibold text-sm
-                      shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105
-                      cursor-pointer border border-white/10 hover:border-white/30
-                      backdrop-blur-sm relative overflow-hidden
-                    `}>
-                      {/* Subtle pattern overlay */}
-                      <div className="absolute inset-0 bg-white/5 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
+                    <div className="
+                      bg-white border border-slate-200 rounded-lg p-4 h-16
+                      flex items-center justify-center
+                      shadow-sm hover:shadow-md
+                      transition-all duration-300 ease-out
+                      hover:border-blue-300 hover:-translate-y-1
+                      cursor-pointer relative overflow-hidden
+                    ">
+                      {/* Subtle hover background */}
+                      <div className="absolute inset-0 bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       
-                      <span className="relative z-10 font-medium tracking-wide">{skill}</span>
+                      {/* Skill text */}
+                      <span className="relative z-10 text-slate-700 font-medium text-sm text-center leading-tight group-hover:text-blue-700 transition-colors duration-300">
+                        {skill}
+                      </span>
                       
-                      {/* Animated border */}
-                      <div className="absolute inset-0 rounded-xl border-2 border-transparent bg-gradient-to-r from-white/20 to-white/10 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
+                      {/* Subtle left border accent */}
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-l-lg"></div>
                     </div>
                     
-                    {/* Enhanced glow effect on hover */}
-                    <div className={`
-                      absolute inset-0 h-16 rounded-xl bg-gradient-to-r ${category.gradient}
-                      opacity-0 group-hover/skill:opacity-40 transition-all duration-300
-                      blur-xl -z-10 scale-110
-                    `}></div>
+                    {/* Enhanced shadow on hover */}
+                    <div className="absolute inset-0 bg-blue-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10"></div>
                   </div>
                 ))}
               </div>
@@ -95,11 +103,13 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Floating particles effect */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full opacity-20 animate-float"></div>
-          <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-purple-400 rounded-full opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-25 animate-float" style={{animationDelay: '4s'}}></div>
+        {/* Bottom decorative element */}
+        <div className="mt-20 flex justify-center">
+          <div className="flex space-x-2">
+            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+            <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
+            <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
+          </div>
         </div>
       </div>
     </section>
