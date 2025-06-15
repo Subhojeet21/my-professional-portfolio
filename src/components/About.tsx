@@ -1,5 +1,5 @@
-
 import { Code, Users, Zap, Award } from "lucide-react";
+import AnimatedCodeSphere from "./AnimatedCodeSphere";
 
 const About = () => {
   const highlights = [
@@ -37,14 +37,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="fade-in-section">
-            <div className="relative group">
-              <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Professional workspace"
-                className="rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
+            <AnimatedCodeSphere />
           </div>
           
           <div className="fade-in-section">
