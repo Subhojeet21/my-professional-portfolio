@@ -60,7 +60,7 @@ const Hero = () => {
             </Avatar>
           </div>
 
-          <h1 className="text-6xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight">
+          <h1 className="text-6xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight">
             Subhojeet Ghosh
           </h1>
           
