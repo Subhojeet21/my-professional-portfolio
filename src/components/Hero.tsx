@@ -1,7 +1,8 @@
 
 import { useState, useEffect } from "react";
-import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
@@ -50,6 +51,15 @@ const Hero = () => {
             </span>
           </div>
           
+          <div className="flex justify-center mb-8">
+            <Avatar className="w-40 h-40 border-4 border-blue-500/30 shadow-lg bg-slate-900">
+              <AvatarImage src="/placeholder.svg" alt="John Smith" />
+              <AvatarFallback className="bg-transparent">
+                <User className="w-20 h-20 text-slate-400" />
+              </AvatarFallback>
+            </Avatar>
+          </div>
+
           <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight">
             John Smith
           </h1>
