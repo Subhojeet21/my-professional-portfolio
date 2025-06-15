@@ -4,56 +4,32 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "Vue.js", level: 85 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "JavaScript", level: 95 },
-        { name: "HTML/CSS", level: 98 },
-        { name: "Angular", level: 80 }
+        "React", "TypeScript", "Next.js", "Vue.js", 
+        "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular"
       ],
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       title: "Backend Development", 
       skills: [
-        { name: "Node.js", level: 92 },
-        { name: "Python", level: 88 },
-        { name: "Java", level: 85 },
-        { name: "Express.js", level: 90 },
-        { name: "Django", level: 82 },
-        { name: "Spring Boot", level: 78 },
-        { name: "REST APIs", level: 95 },
-        { name: "GraphQL", level: 85 }
+        "Node.js", "Python", "Java", "Express.js",
+        "Django", "Spring Boot", "REST APIs", "GraphQL"
       ],
       gradient: "from-green-500 to-emerald-500"
     },
     {
       title: "Database & Cloud",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 88 },
-        { name: "MySQL", level: 85 },
-        { name: "AWS", level: 92 },
-        { name: "Azure", level: 80 },
-        { name: "Docker", level: 88 },
-        { name: "Kubernetes", level: 85 },
-        { name: "Redis", level: 82 }
+        "PostgreSQL", "MongoDB", "MySQL", "AWS",
+        "Azure", "Docker", "Kubernetes", "Redis"
       ],
       gradient: "from-purple-500 to-pink-500"
     },
     {
       title: "Tools & Technologies",
       skills: [
-        { name: "Git", level: 95 },
-        { name: "CI/CD", level: 90 },
-        { name: "Terraform", level: 85 },
-        { name: "Jenkins", level: 82 },
-        { name: "Webpack", level: 88 },
-        { name: "Linux", level: 90 },
-        { name: "Monitoring", level: 85 },
-        { name: "Testing", level: 88 }
+        "Git", "CI/CD", "Terraform", "Jenkins",
+        "Webpack", "Linux", "Monitoring", "Testing"
       ],
       gradient: "from-orange-500 to-red-500"
     }
@@ -84,28 +60,40 @@ const Skills = () => {
                 </h3>
               </div>
               
-              <div className="space-y-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group/skill">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 font-medium group-hover/skill:text-white transition-colors duration-200">
-                        {skill.name}
-                      </span>
-                      <span className="text-gray-400 text-sm font-semibold">
-                        {skill.level}%
-                      </span>
+                  <div 
+                    key={skillIndex} 
+                    className="group/skill relative"
+                  >
+                    <div className={`
+                      w-20 h-20 rounded-full bg-gradient-to-br ${category.gradient} 
+                      flex items-center justify-center text-white font-semibold text-xs text-center
+                      shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110
+                      cursor-pointer border-2 border-white/10 hover:border-white/30
+                      group-hover/skill:animate-pulse
+                    `}>
+                      <span className="px-1 leading-tight">{skill}</span>
                     </div>
-                    <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                      <div 
-                        className={`h-full bg-gradient-to-r ${category.gradient} rounded-full transition-all duration-1000 ease-out transform origin-left`}
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    
+                    {/* Glow effect on hover */}
+                    <div className={`
+                      absolute inset-0 w-20 h-20 rounded-full bg-gradient-to-br ${category.gradient}
+                      opacity-0 group-hover/skill:opacity-30 transition-opacity duration-300
+                      blur-xl -z-10
+                    `}></div>
                   </div>
                 ))}
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Floating particles effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full opacity-20 animate-float"></div>
+          <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-purple-400 rounded-full opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-25 animate-float" style={{animationDelay: '4s'}}></div>
         </div>
       </div>
     </section>
