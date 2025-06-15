@@ -96,7 +96,9 @@ const About = () => {
 
         {/* Highlights grid */}
         <div className="fade-in-section">
-          <h3 className="text-3xl font-bold text-center text-white mb-12">Key Highlights</h3>
+          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-12">
+            Key Highlights
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((highlight, index) => (
               <div key={index} className="glass-card p-6 rounded-2xl hover-lift group border border-gray-700/50 text-center">
