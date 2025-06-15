@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -92,7 +91,7 @@
   }
 
   body {
-    @apply bg-slate-900 text-white antialiased;
+    @apply bg-slate-950 text-white antialiased;
   }
 
   html {
