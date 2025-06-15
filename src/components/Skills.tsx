@@ -50,22 +50,22 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           {skillCategories.map((category, categoryIndex) => (
             <Card key={categoryIndex} className="bg-slate-900/50 border-slate-800 fade-in-section flex flex-col">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl md:text-3xl font-bold text-slate-200 tracking-wide inline-block relative">
+              <CardHeader className="text-center p-4">
+                <CardTitle className="text-xl md:text-2xl font-bold text-slate-200 tracking-wide inline-block relative">
                   {category.title}
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-1/3 bg-blue-500"></div>
                 </CardTitle>
               </CardHeader>
               
-              <CardContent className="flex-grow">
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <CardContent className="flex-grow p-4 pt-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   {category.skills.map((skill, skillIndex) => (
                     <div 
                       key={skillIndex} 
                       className="group"
                     >
                       <div className="
-                        bg-slate-800/40 border border-slate-700 rounded-lg p-4 h-24
+                        bg-slate-800/40 border border-slate-700 rounded-lg p-3 h-20
                         flex items-center justify-center text-center
                         transition-all duration-300 ease-in-out
                         hover:bg-slate-700/60 hover:border-blue-500 hover:-translate-y-1
