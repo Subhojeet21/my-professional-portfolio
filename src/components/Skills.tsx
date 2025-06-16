@@ -6,33 +6,35 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        "React", "TypeScript", "Next.js", "Vue.js", 
-        "Tailwind CSS", "JavaScript", "HTML/CSS", "Angular",
+        //"React", "TypeScript", "Next.js", "Vue.js", 
+        //"Tailwind CSS", "JavaScript", "HTML/CSS", "Angular",
+        "JavaScript",
         "LWC", "Aura Components", "Visualforce"
       ],
     },
     {
       title: "Backend Development", 
       skills: [
-        "Node.js", "Python", "Java", "Express.js",
-        "Django", "Spring Boot", "REST APIs", "GraphQL",
+        "Apex", "Python", "Java",,
+        "REST APIs","SOAP APIs","Streaming APIs", "GraphQL",
         "Apex", "SOQL", "Platform Events"
       ],
     },
     {
       title: "Database & Cloud",
       skills: [
-        "PostgreSQL", "MongoDB", "MySQL", "AWS",
-        "Azure", "Docker", "Kubernetes", "Redis",
+        "MongoDB", "MySQL", "AWS",
+        //"Azure", "Docker", "Kubernetes", "Redis",
         "Salesforce Platform", "Heroku"
       ],
     },
     {
       title: "Tools & Technologies",
       skills: [
-        "Git", "CI/CD", "Terraform", "Jenkins",
-        "Webpack", "Linux", "Monitoring", "Testing",
-        "Salesforce DX", "Salesforce CLI", "Copado"
+        "Git", "CI/CD", "Jenkins", "Perforce",
+        "Monitoring", "Testing", "Dynatrace", "Splunk",
+        "Salesforce DX", "Salesforce CLI",
+        "Jira", "Rally", "Asana", "Confluence"
       ],
     }
   ];
