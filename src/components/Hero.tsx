@@ -72,7 +72,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
             Passionate software engineer with <span className="text-blue-400 font-semibold">13+ years</span> of experience building scalable 
             web applications and leading development teams. Specializing in full-stack 
-            development, cloud architecture, and modern JavaScript frameworks.
+            development in Salesforce platform and cloud architecture.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
