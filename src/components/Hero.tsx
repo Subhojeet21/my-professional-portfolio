@@ -51,7 +51,7 @@ const Hero = () => {
           
           <div className="flex justify-center mb-8">
             <Avatar className="w-40 h-40 border-4 border-blue-500/30 shadow-lg bg-slate-900">
-              <AvatarImage src="/docs/1666772693002.jpg" alt="Subhojeet Ghosh" />
+              <AvatarImage src="/my-professional-portfolio/1666772693002.jpg" alt="Subhojeet Ghosh" />
               <AvatarFallback className="bg-transparent">
                 <User className="w-20 h-20 text-slate-400" />
               </AvatarFallback>
@@ -89,7 +89,7 @@ const Hero = () => {
             </Button>
             <Button variant="outline" size="lg" className="glass-card border-purple-400/30 text-purple-400 hover:bg-purple-400/10 px-8 py-4 text-lg font-semibold hover-lift rounded-xl">
               <a 
-                href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" 
+                href="/my-professional-portfolio/resume-architect-Subhojeet_Ghosh.pdf" 
                 download="Subhojeet_Ghosh_Resume.pdf"
                 className="flex items-center gap-3"
               >
