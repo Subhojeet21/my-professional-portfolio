@@ -9,20 +9,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "john.smith@email.com",
-      href: "mailto:john.smith@email.com"
+      value: "ghoshsubhojeet21@gmail.com",
+      href: "mailto:ghoshsubhojeet21@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8668509262",
+      href: "tel:+918668509262"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      href: "#"
+      value: "Bengaluru, India",
+      href: "https://maps.app.goo.gl/fKJ8b2C9Nt7xxrGPA"
     }
   ];
 
