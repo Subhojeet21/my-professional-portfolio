@@ -95,7 +95,7 @@ const About = () => {
 
         {/* Highlights grid */}
         <div className="fade-in-section">
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-12">
+          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-12" style={{ lineHeight: '1.5' }}>
             Key Highlights
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
