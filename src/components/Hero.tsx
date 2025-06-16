@@ -100,7 +100,7 @@ const Hero = () => {
             {[
               { icon: Github, href: "https://github.com/Subhojeet21", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/subhojeet-ghosh-salesforce-professional/", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:john@example.com", label: "Email" }
+              { icon: Mail, href: "mailto:ghoshsubhojeet21@gmail.com", label: "Email" }
             ].map((social, index) => (
               <a 
                 key={index}
