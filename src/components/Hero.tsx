@@ -8,10 +8,9 @@ const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const titles = [
-    "Senior Software Engineer",
-    "Full-Stack Developer", 
-    "Cloud Architect",
-    "Team Lead"
+    "Principal Engineer",
+    "Salesforce Architect",
+    "Technical Lead"
   ];
 
   useEffect(() => {
