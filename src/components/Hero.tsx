@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ArrowDown, Github, Linkedin, Mail, Download, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -89,7 +88,11 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="glass-card border-purple-400/30 text-purple-400 hover:bg-purple-400/10 px-8 py-4 text-lg font-semibold hover-lift rounded-xl">
-              <a href="/docs/resume-architect-Subhojeet_Ghosh.pdf" className="flex items-center gap-3">
+              <a 
+                href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" 
+                download="Subhojeet_Ghosh_Resume.pdf"
+                className="flex items-center gap-3"
+              >
                 <Download size={20} />
                 Resume
               </a>
