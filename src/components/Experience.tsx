@@ -4,51 +4,57 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
+      title: "Principal Engineer",
+      company: "Autodesk",
+      location: "Bengaluru, India",
       duration: "2020 - Present",
       description: [
-        "Led a team of 8 developers in building a microservices architecture serving 2M+ users",
-        "Reduced system response time by 40% through optimization and caching strategies",
-        "Implemented CI/CD pipelines that decreased deployment time from hours to minutes",
-        "Mentored junior developers and conducted technical interviews"
+        "Working as a technical lead and architect for one of the salesengineering teams at Autodesk.",
+        "Responsible for creating and reviewing the technical architecture of the solutions, leading the development team, code reviews, ensuring development best practices are followed, performance improvement of the applications, cross-team communications, and interacting with the stakeholders.",
+        "Led a team of developers for one of the critical projects atAutodesk which contributed to the company's transition to a new buying experience model for its customers as a part of GTM strategy.",
+        "Active contributor of a team responsible for improving theperformance of various legacy applications in Salesforceplatform which was impacting the overall org health. Weachieved around 70% reduction of platform related issuesalready as an outcome.",
+        "Architected and developed the complete CLM flow aligning withthe current CPQ process and business requirements forprocessing red-lining quotes for the customers. This streamlinedthe process of maintaining the contract lifecycle withnegotiations."
       ]
     },
     {
-      title: "Full Stack Developer",
-      company: "InnovateLabs",
-      location: "Austin, TX",
-      duration: "2017 - 2020",
+      title: "Lead Consultant",
+      company: "Cloudaction",
+      location: "Pune, India",
+      duration: "2018 - 2020",
       description: [
-        "Developed and maintained 5+ web applications using React, Node.js, and PostgreSQL",
-        "Collaborated with UX/UI designers to create responsive and accessible user interfaces",
-        "Integrated third-party APIs and payment gateways for e-commerce platforms",
-        "Participated in agile development processes and sprint planning"
+        "mplemented the security model and sharing settings for one ofthe in-house applications in Salesforce platform which is used byhigher management at BMC.",
+        "Completed all the major development using LightningExperience, Apex and out of the box features of Salesforce for anapplication created in Salesforce platform as a part of Siebelretirement process in BMC.",
+        "Created an interface in Salesforce, which is compatible in bothSalesforce Classic & Lightning Experience for one of theintegration projects where the application can easily integratewith the WebMethods integration server using SOAP API at BMC.",
+        "Enhanced and fixed all the major issues and critical functionalityglitches in one of the existing applications built using Apex,Visualforce and jquery which is to be used by the employees forregistering and reporting the hours spent on voluntary activitiesin/outside BMC.",
+        "Identified, reviewed, revamped & resolved all the critical issuesfollowed by successfully deploying the code base as a singledeveloper by getting involved in the last critical phase of one ofthe integration projects for 'Entrust Datacard'.",
+        "Trained the in-house junior developers on customization inLightning experience using lightning components and events.",
+        "Led projects during Lightning roll out process by assisting thedevelopers in effectively migrating to Lightning experience fromSalesforce Classic."
       ]
     },
     {
-      title: "Software Developer",
-      company: "StartupXYZ",
-      location: "Seattle, WA",
-      duration: "2014 - 2017",
+      title: "Module Lead",
+      company: "Persistent Systems",
+      location: "Nagpur, India",
+      duration: "2015 - 2018",
       description: [
-        "Built the company's flagship product from MVP to production with 100K+ users",
-        "Implemented real-time features using WebSocket technology",
-        "Optimized database queries resulting in 60% performance improvement",
-        "Collaborated with product managers to define technical requirements"
+        "Successfully implemented features in one of the activeapplications developed in Service Cloud for our client 'SyneosHealth' which helped in boosting agent productivity whileserving the patients and health care professionals.",
+        "Revamped and restructured one of the critical functionalitieswhich led to the automatic creation, prioritization of calls for thiscall center application with minimum manual intervention in theprocess and proper report generation.",
+        "Created a java application which is used to transfer the feed filesfrom Salesforce to SFTP server and vice versa, scheduled it withTask Scheduler. Designed and implemented the encryption,decryption logic.",
+        "Created patient tracker report using Visualforce and Apex for theclient which helps the Admin to easily view and download client specific HIPPA compliant reports for the patients from thesystem, accumulating data from multiple related and unrelatedobjects based on user specified filters and date ranges from asingle screen in Salesforce org.",
+        "Designed and created an interface to send the real time datafrom Salesforce to Snaplogic server using process builder andREST API.",
+        "Created an interface to send the order information fromSalesforce and receive the status in real time from an externalclient's order management server using REST API."
       ]
     },
     {
-      title: "Junior Developer",
-      company: "DevAgency Pro",
-      location: "Portland, OR",
-      duration: "2011 - 2014",
+      title: "Systems Engineer",
+      company: "Tata Consultancy Services",
+      location: "Kolkata, India",
+      duration: "2012 - 2015",
       description: [
-        "Developed custom WordPress themes and plugins for client websites",
-        "Learned modern JavaScript frameworks and best practices",
-        "Assisted in database design and implementation",
-        "Provided technical support and maintenance for existing projects"
+        "Worked and customized the Claims module of TCS Bancsproduct for Insurance for one of the clients, “NationalEmployment Saving Trust“ in Java 6 and Spring framework.",
+        "Developed a user-friendly and fully interactive user interfaceusing Jsf which is used to capture the illness quotient of any userin the system.",
+        "Built and optimized the backend batch processes in Java in theClaims module of the product. to send automatic notifications tothe users who are approaching their retirement notifying themabout various annuity options available to them post retirementleading them to take necessary and timely actions resulting inincreased customer trust.",
+        "Revamped one of the backend functionalities in Java in theClaims module of the product, which helped in streamlining theprocess of claiming and processing the returns on userretirement from service."
       ]
     }
   ];
