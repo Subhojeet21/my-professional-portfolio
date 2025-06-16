@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -99,13 +98,16 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white flex items-center space-x-2 hover-lift">
-                    <a 
-                      href={project.liveUrl}>
+                  <a 
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white flex items-center space-x-2 hover-lift">
                       <ExternalLink size={16} />
                       <span>Live Demo</span>
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                   {/*<Button variant="outline" className="glass-card border-blue-400/30 text-blue-400 hover:bg-blue-400/10 flex items-center space-x-2 hover-lift">
                     <Github size={16} />
                     <span>Source Code</span>
