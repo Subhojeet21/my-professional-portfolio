@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Code,
       title: "13+ Years Experience",
-      description: "Extensive experience in full-stack development and software architecture",
+      description: "Extensive experience in full-stack Salesforce development and software architecture",
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -18,7 +18,7 @@ const About = () => {
     {
       icon: Zap,
       title: "Performance Focus",
-      description: "Optimized applications serving millions of users with 99.9% uptime",
+      description: "Optimized applications in Salesforce platform focusing on performance and scalability",
       color: "from-green-500 to-emerald-500"
     },
     {
