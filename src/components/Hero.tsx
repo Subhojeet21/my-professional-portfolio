@@ -63,7 +63,7 @@ const Hero = () => {
           </h1>
           
           <div className="h-20 mb-8">
-            <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent" style={{ lineHeight: '1.5' }}>
               {displayText}
               <span className="animate-pulse text-blue-400">|</span>
             </h2>
