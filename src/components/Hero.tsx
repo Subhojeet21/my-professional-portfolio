@@ -51,14 +51,14 @@ const Hero = () => {
           
           <div className="flex justify-center mb-8">
             <Avatar className="w-40 h-40 border-4 border-blue-500/30 shadow-lg bg-slate-900">
-              <AvatarImage src="/my-professional-portfolio/docs/1666772693002.jpg" alt="Subhojeet Ghosh" />
+              <AvatarImage src="/1666772693002.jpg" alt="Subhojeet Ghosh" />
               <AvatarFallback className="bg-transparent">
                 <User className="w-20 h-20 text-slate-400" />
               </AvatarFallback>
             </Avatar>
           </div>
 
-          <h1 className="text-6xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight">
+          <h1 className="text-6xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight" style={{ lineHeight: '1.2' }}>
             Subhojeet Ghosh
           </h1>
           
@@ -89,7 +89,7 @@ const Hero = () => {
             </Button>
             <Button variant="outline" size="lg" className="glass-card border-purple-400/30 text-purple-400 hover:bg-purple-400/10 px-8 py-4 text-lg font-semibold hover-lift rounded-xl">
               <a 
-                href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" 
+                href="/resume-architect-Subhojeet_Ghosh.pdf" 
                 download="Subhojeet_Ghosh_Resume.pdf"
                 className="flex items-center gap-3"
               >
