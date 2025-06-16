@@ -58,7 +58,7 @@ const Hero = () => {
             </Avatar>
           </div>
 
-          <h1 className="text-6xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight" style={{ lineHeight: '1.2' }}>
+          <h1 className="text-6xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent animate-gradient leading-tight" style={{ lineHeight: '1.5' }}>
             Subhojeet Ghosh
           </h1>
           
