@@ -44,7 +44,7 @@ const About = () => {
           <div className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-blue-300 text-sm font-medium tracking-wide mb-6">
             About Me
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6" style={{ lineHeight: '1.5' }}>
             Crafting Digital Excellence
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
