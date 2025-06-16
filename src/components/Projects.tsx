@@ -100,13 +100,16 @@ const Projects = () => {
                 
                 <div className="flex space-x-4">
                   <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white flex items-center space-x-2 hover-lift">
-                    <ExternalLink size={16} />
-                    <span>Live Demo</span>
+                    <a 
+                      href={project.liveUrl}>
+                      <ExternalLink size={16} />
+                      <span>Live Demo</span>
+                    </a>
                   </Button>
-                  <Button variant="outline" className="glass-card border-blue-400/30 text-blue-400 hover:bg-blue-400/10 flex items-center space-x-2 hover-lift">
+                  {/*<Button variant="outline" className="glass-card border-blue-400/30 text-blue-400 hover:bg-blue-400/10 flex items-center space-x-2 hover-lift">
                     <Github size={16} />
                     <span>Source Code</span>
-                  </Button>
+                  </Button>*/}
                 </div>
               </div>
             </div>
