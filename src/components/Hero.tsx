@@ -51,7 +51,7 @@ const Hero = () => {
           
           <div className="flex justify-center mb-8">
             <Avatar className="w-40 h-40 border-4 border-blue-500/30 shadow-lg bg-slate-900">
-              <AvatarImage src="/placeholder.svg" alt="Subhojeet Ghosh" />
+              <AvatarImage src="/docs/1666772693002.jpg" alt="Subhojeet Ghosh" />
               <AvatarFallback className="bg-transparent">
                 <User className="w-20 h-20 text-slate-400" />
               </AvatarFallback>
