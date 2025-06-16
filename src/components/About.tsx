@@ -30,8 +30,8 @@ const About = () => {
   ];
 
   const stats = [
-    { label: "Projects Completed", value: "100+", icon: Target },
-    { label: "Team Members Led", value: "50+", icon: Users },
+    { label: "Projects Completed", value: "15+", icon: Target },
+    { label: "Team Members Led", value: "25+", icon: Users },
     { label: "Years of Experience", value: "13+", icon: TrendingUp },
     { label: "Technologies Mastered", value: "25+", icon: Code }
   ];
@@ -63,8 +63,7 @@ const About = () => {
               <p>
                 With over <span className="text-blue-400 font-semibold">13 years</span> in the software development industry, I've had the privilege 
                 of working with startups, enterprises, and everything in between. My journey has 
-                taken me from writing my first "Hello World" to architecting systems that handle 
-                millions of requests daily.
+                taken me from writing my first "Hello World" to architecting systems meant for performance and scalability.
               </p>
               <p>
                 I specialize in <span className="text-purple-400 font-semibold">modern web technologies</span>, cloud computing, and agile methodologies. 
@@ -72,7 +71,7 @@ const About = () => {
                 products that make a real difference in people's lives.
               </p>
               <p>
-                When I'm not coding, you'll find me mentoring upcoming developers, contributing to open-source projects, 
+                When I'm not coding, you'll find me mentoring upcoming developers, building dev tools, real-life projects, 
                 or exploring the latest tech trends that are shaping our digital future.
               </p>
             </div>
