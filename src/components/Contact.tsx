@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="glass-card p-8 rounded-2xl fade-in-section">
+          {/*<div className="glass-card p-8 rounded-2xl fade-in-section">
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -157,7 +157,7 @@ const Contact = () => {
                 <span>Send Message</span>
               </Button>
             </form>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
