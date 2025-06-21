@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
 
           <div className="glass-card p-8 rounded-2xl fade-in-section">
-            <div className="glass-card p-6 rounded-xl">
+            <div className="p-6 rounded-xl">
               <h4 className="font-semibold text-white mb-3">Why Work With Me?</h4>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center space-x-2">
