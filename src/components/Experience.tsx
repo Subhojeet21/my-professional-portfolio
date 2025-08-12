@@ -9,11 +9,11 @@ const Experience = () => {
       location: "Bengaluru, India",
       duration: "2020 - Present",
       description: [
-        "Working as a technical lead and architect for one of the salesengineering teams at Autodesk.",
+        "Working as a technical lead and architect for one of the sales engineering teams at Autodesk.",
         "Responsible for creating and reviewing the technical architecture of the solutions, leading the development team, code reviews, ensuring development best practices are followed, performance improvement of the applications, cross-team communications, and interacting with the stakeholders.",
-        "Led a team of developers for one of the critical projects atAutodesk which contributed to the company's transition to a new buying experience model for its customers as a part of GTM strategy.",
-        "Active contributor of a team responsible for improving theperformance of various legacy applications in Salesforceplatform which was impacting the overall org health. Weachieved around 70% reduction of platform related issuesalready as an outcome.",
-        "Architected and developed the complete CLM flow aligning withthe current CPQ process and business requirements forprocessing red-lining quotes for the customers. This streamlinedthe process of maintaining the contract lifecycle withnegotiations."
+        "Led a team of developers for one of the critical projects at Autodesk which contributed to the company's transition to a new buying experience model for its customers as a part of GTM strategy.",
+        "Active contributor of a team responsible for improving theperformance of various legacy applications in Salesforce platform which was impacting the overall org health. We achieved around 70% reduction of platform related issues already as an outcome.",
+        "Architected and developed the complete CLM flow aligning with the current CPQ process and business requirements for processing red-lining quotes for the customers using Conga CLM package. This streamlined the process of maintaining the contract lifecycle with negotiations."
       ]
     },
     {
@@ -22,13 +22,13 @@ const Experience = () => {
       location: "Pune, India",
       duration: "2018 - 2020",
       description: [
-        "mplemented the security model and sharing settings for one ofthe in-house applications in Salesforce platform which is used byhigher management at BMC.",
-        "Completed all the major development using LightningExperience, Apex and out of the box features of Salesforce for anapplication created in Salesforce platform as a part of Siebelretirement process in BMC.",
-        "Created an interface in Salesforce, which is compatible in bothSalesforce Classic & Lightning Experience for one of theintegration projects where the application can easily integratewith the WebMethods integration server using SOAP API at BMC.",
-        "Enhanced and fixed all the major issues and critical functionalityglitches in one of the existing applications built using Apex,Visualforce and jquery which is to be used by the employees forregistering and reporting the hours spent on voluntary activitiesin/outside BMC.",
-        "Identified, reviewed, revamped & resolved all the critical issuesfollowed by successfully deploying the code base as a singledeveloper by getting involved in the last critical phase of one ofthe integration projects for 'Entrust Datacard'.",
-        "Trained the in-house junior developers on customization inLightning experience using lightning components and events.",
-        "Led projects during Lightning roll out process by assisting thedevelopers in effectively migrating to Lightning experience fromSalesforce Classic."
+        "Implemented the security model and sharing settings for one of the in-house applications in Salesforce platform which is used by higher management at BMC.",
+        "Completed all the major development using Lightning Experience, Apex and out of the box features of Salesforce for an application created in Salesforce platform as a part of Siebel retirement process in BMC.",
+        "Created an interface in Salesforce, which is compatible in both Salesforce Classic & Lightning Experience for one of the integration projects where the application can easily integrate with the WebMethods integration server using SOAP API at BMC.",
+        "Enhanced and fixed all the major issues and critical functionality glitches in one of the existing applications built using Apex,Visualforce and jquery which is to be used by the employees for registering and reporting the hours spent on voluntary activities in/outside BMC.",
+        "Identified, reviewed, revamped & resolved all the critical issues followed by successfully deploying the code base as a single developer by getting involved in the last critical phase of one ofthe integration projects for 'Entrust Datacard'.",
+        "Trained the in-house junior developers on customization in Lightning experience using lightning components and events.",
+        "Led projects during Lightning roll out process by assisting the developers in effectively migrating to Lightning experience from Salesforce Classic."
       ]
     },
     {
@@ -37,12 +37,12 @@ const Experience = () => {
       location: "Nagpur, India",
       duration: "2015 - 2018",
       description: [
-        "Successfully implemented features in one of the activeapplications developed in Service Cloud for our client 'SyneosHealth' which helped in boosting agent productivity whileserving the patients and health care professionals.",
-        "Revamped and restructured one of the critical functionalitieswhich led to the automatic creation, prioritization of calls for thiscall center application with minimum manual intervention in theprocess and proper report generation.",
-        "Created a java application which is used to transfer the feed filesfrom Salesforce to SFTP server and vice versa, scheduled it withTask Scheduler. Designed and implemented the encryption,decryption logic.",
-        "Created patient tracker report using Visualforce and Apex for theclient which helps the Admin to easily view and download client specific HIPPA compliant reports for the patients from thesystem, accumulating data from multiple related and unrelatedobjects based on user specified filters and date ranges from asingle screen in Salesforce org.",
-        "Designed and created an interface to send the real time datafrom Salesforce to Snaplogic server using process builder andREST API.",
-        "Created an interface to send the order information fromSalesforce and receive the status in real time from an externalclient's order management server using REST API."
+        "Successfully implemented features in one of the active applications developed in Service Cloud for our client 'Syneos Health' which helped in boosting agent productivity while serving the patients and health care professionals.",
+        "Revamped and restructured one of the critical functionalities which led to the automatic creation, prioritization of calls for this call center application with minimum manual intervention in the process and proper report generation.",
+        "Created a java application which is used to transfer the feed filesfrom Salesforce to SFTP server and vice versa, scheduled it with Task Scheduler. Designed and implemented the encryption,decryption logic.",
+        "Created patient tracker report using Visualforce and Apex for the client which helps the Admin to easily view and download client specific HIPPA compliant reports for the patients from thes ystem, accumulating data from multiple related and unrelated objects based on user specified filters and date ranges from a single screen in Salesforce org.",
+        "Designed and created an interface to send the real time data from Salesforce to Snaplogic server using process builder and REST API.",
+        "Created an interface to send the order information from Salesforce and receive the status in real time from an external client's order management server using REST API."
       ]
     },
     {
@@ -51,10 +51,10 @@ const Experience = () => {
       location: "Kolkata, India",
       duration: "2012 - 2015",
       description: [
-        "Worked and customized the Claims module of TCS Bancsproduct for Insurance for one of the clients, “NationalEmployment Saving Trust“ in Java 6 and Spring framework.",
-        "Developed a user-friendly and fully interactive user interfaceusing Jsf which is used to capture the illness quotient of any userin the system.",
-        "Built and optimized the backend batch processes in Java in theClaims module of the product. to send automatic notifications tothe users who are approaching their retirement notifying themabout various annuity options available to them post retirementleading them to take necessary and timely actions resulting inincreased customer trust.",
-        "Revamped one of the backend functionalities in Java in theClaims module of the product, which helped in streamlining theprocess of claiming and processing the returns on userretirement from service."
+        "Worked and customized the Claims module of TCS Bancs product for Insurance for one of the clients, “National Employment Saving Trust“ in Java 6 and Spring framework.",
+        "Developed a user-friendly and fully interactive user interface using Jsf which is used to capture the illness quotient of any userin the system.",
+        "Built and optimized the backend batch processes in Java in the Claims module of the product. to send automatic notifications tothe users who are approaching their retirement notifying them about various annuity options available to them post retirement leading them to take necessary and timely actions resulting in increased customer trust.",
+        "Revamped one of the backend functionalities in Java in the Claims module of the product, which helped in streamlining the process of claiming and processing the returns on user retirement from service."
       ]
     }
   ];
