@@ -69,7 +69,7 @@ const Contact = () => {
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400">•</span>
-                  <span>13+ years of proven experience</span>
+                  <span>14+ years of proven experience</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400">•</span>

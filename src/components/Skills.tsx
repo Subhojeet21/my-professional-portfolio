@@ -51,7 +51,7 @@ const Skills = () => {
             Skills & Technologies
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            A comprehensive skill set built over 13+ years of professional development, focused on creating robust, scalable, and modern web applications.
+            A comprehensive skill set built over 14+ years of professional development, focused on creating robust, scalable, and modern web applications.
           </p>
         </div>
 

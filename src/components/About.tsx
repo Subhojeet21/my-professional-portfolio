@@ -5,7 +5,7 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: "13+ Years Experience",
+      title: "14+ Years Experience",
       description: "Extensive experience in full-stack Salesforce development and software architecture",
       color: "from-blue-500 to-cyan-500"
     },
@@ -32,7 +32,7 @@ const About = () => {
   const stats = [
     { label: "Projects Completed", value: "15+", icon: Target },
     { label: "Team Members Led", value: "25+", icon: Users },
-    { label: "Years of Experience", value: "13+", icon: TrendingUp },
+    { label: "Years of Experience", value: "14+", icon: TrendingUp },
     { label: "Technologies Mastered", value: "25+", icon: Code }
   ];
 
@@ -61,7 +61,7 @@ const About = () => {
             </h3>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                With over <span className="text-blue-400 font-semibold">13 years</span> in the software development industry, I've had the privilege 
+                With over <span className="text-blue-400 font-semibold">14 years</span> in the software development industry, I've had the privilege 
                 of working with startups, enterprises, and everything in between. My journey has 
                 taken me from writing my first "Hello World" to architecting systems meant for performance and scalability.
               </p>
