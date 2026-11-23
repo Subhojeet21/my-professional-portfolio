@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Linkedin, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { trackResumeDownload } from "@/lib/analytics";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +69,7 @@ const Navigation = () => {
                 Get in Touch
               </a>
               <Button asChild className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white px-5 py-2.5 text-sm font-semibold rounded-lg hover-lift">
-                <a href="https://github.com/Subhojeet21/my-professional-portfolio/releases/download/v1.0.0/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf" onClick={() => trackResumeDownload("navigation")}>
+                <a href="https://github.com/Subhojeet21/my-professional-portfolio/releases/download/v1.0.0/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf">
                   Resume
                 </a>
               </Button>
@@ -110,7 +109,7 @@ const Navigation = () => {
                 Get in Touch
               </a>
               <Button asChild className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white py-3 px-6 text-sm font-semibold rounded-lg hover-lift">
-                <a href="https://github.com/Subhojeet21/my-professional-portfolio/releases/download/v1.0.0/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf" onClick={() => trackResumeDownload("navigation-mobile")}>
+                <a href="https://github.com/Subhojeet21/my-professional-portfolio/releases/download/v1.0.0/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf">
                   Download Resume
                 </a>
               </Button>
