@@ -43,7 +43,7 @@ const Contact = () => {
   const inquiryTypes = [
     "Salesforce Architect Opportunities",
     "Principal Engineer Roles",
-    "Solution Architect Positions",
+    "Solution/Technical Architect Positions",
     "Enterprise Transformation Programs",
     "Architecture Leadership Opportunities"
   ];
@@ -92,7 +92,7 @@ const Contact = () => {
             Architecture Advisory & Executive Partnerships
           </h2>
           <p className="section-subtitle">
-            Open to Principal Architect, Solution Architect and enterprise transformation consulting engagements. Let's discuss how architecture can drive your business outcomes.
+            Open to Principal Architect, Solution/Technical Architect and enterprise transformation consulting engagements. Let's discuss how architecture can drive your business outcomes.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
               Start a Conversation
             </h3>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-              Whether you're scaling your Salesforce platform, designing AI governance, or launching a digital transformation program — I'm available for Salesforce Architect, Principal Engineer, and Solution Architect roles, as well as enterprise transformation and architecture leadership engagements.
+              Whether you're scaling your Salesforce platform, designing AI governance, or launching a digital transformation program — I'm available for Salesforce Architect, Principal Engineer, and Solution/Technical Architect roles, as well as enterprise transformation and architecture leadership engagements.
             </p>
 
             <div className="space-y-6">
