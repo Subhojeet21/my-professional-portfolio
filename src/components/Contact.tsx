@@ -2,6 +2,21 @@ import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
+
+const formSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Invalid email address"),
+  subject: z.string().min(2, "Subject must be at least 2 characters"),
+  message: z.string().min(10, "Message must be at least 10 characters")
+});
+
+type FormValues = z.infer<typeof formSchema>;
+
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 const Contact = () => {
   const contactInfo = [
@@ -33,16 +48,41 @@ const Contact = () => {
     "Architecture Leadership Opportunities"
   ];
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting }
+  } = useForm<FormValues>({
+    resolver: zodResolver(formSchema)
+  });
+
+  const onSubmit = async (data: FormValues) => {
+    try {
+      if (FORMSPREE_ENDPOINT) {
+        const response = await fetch(FORMSPREE_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        if (!response.ok) throw new Error("Failed to send message");
+      } else {
+        const mailtoUrl = `mailto:ghoshsubhojeet21@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`)}`;
+        window.location.href = mailtoUrl;
+      }
+      toast.success("Message sent successfully");
+    } catch {
+      toast.error("Failed to send message. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-sky-500/5 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-20 fade-in-section">
           <div className="inline-block px-6 py-3 rounded-full text-xs font-semibold tracking-[0.14em] uppercase section-kicker">
             <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse-dot mr-2" />
@@ -57,7 +97,6 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Left: Contact Info */}
           <div className="space-y-8 fade-in-section">
             <h3 className="text-3xl font-bold text-white mb-4">
               Start a Conversation
@@ -85,7 +124,6 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Inquiry types */}
             <div className="mt-8">
               <h4 className="text-xs font-bold tracking-tighter uppercase text-slate-500 mb-4">Positioning For</h4>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -99,10 +137,9 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right: Contact Form */}
           <div className="glass-card-strong rounded-2xl p-8 md:p-12 border border-slate-700/50 fade-in-section">
             <h4 className="text-2xl font-bold text-white mb-6">Send a Message</h4>
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
@@ -112,8 +149,12 @@ const Contact = () => {
                     id="name"
                     type="text"
                     placeholder="John Doe"
+                    {...register("name")}
                     className="w-full bg-slate-900/50 border-slate-700 text-white placeholder-slate-500 focus:border-sky-500 focus:ring-sky-500/30 rounded-lg"
                   />
+                  {errors.name && (
+                    <p className="text-xs text-red-400 mt-1">{errors.name.message}</p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
@@ -123,8 +164,12 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="john@company.com"
+                    {...register("email")}
                     className="w-full bg-slate-900/50 border-slate-700 text-white placeholder-slate-500 focus:border-sky-500 focus:ring-sky-500/30 rounded-lg"
                   />
+                  {errors.email && (
+                    <p className="text-xs text-red-400 mt-1">{errors.email.message}</p>
+                  )}
                 </div>
               </div>
               <div>
@@ -135,8 +180,12 @@ const Contact = () => {
                   id="subject"
                   type="text"
                   placeholder="Architecture Advisory Inquiry"
+                  {...register("subject")}
                   className="w-full bg-slate-900/50 border-slate-700 text-white placeholder-slate-500 focus:border-sky-500 focus:ring-sky-500/30 rounded-lg"
                 />
+                {errors.subject && (
+                  <p className="text-xs text-red-400 mt-1">{errors.subject.message}</p>
+                )}
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
@@ -146,18 +195,25 @@ const Contact = () => {
                   id="message"
                   rows={5}
                   placeholder="Tell me about your transformation goals..."
+                  {...register("message")}
                   className="w-full bg-slate-900/50 border-slate-700 text-white placeholder-slate-500 focus:border-sky-500 focus:ring-sky-500/30 rounded-lg"
                 />
+                {errors.message && (
+                  <p className="text-xs text-red-400 mt-1">{errors.message.message}</p>
+                )}
               </div>
-              <Button type="submit" className="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white text-lg font-semibold py-4 rounded-lg hover-lift animate-glow shadow-[0_8px_24px_rgba(56,189,248,0.25)]">
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white text-lg font-semibold py-4 rounded-lg hover-lift animate-glow shadow-[0_8px_24px_rgba(56,189,248,0.25)]"
+              >
                 <Send size={20} />
-                <span className="ml-2">Send Message</span>
+                <span className="ml-2">{isSubmitting ? "Sending..." : "Send Message"}</span>
               </Button>
             </form>
           </div>
         </div>
 
-        {/* Social links footer */}
         <div className="mt-20 text-center fade-in-section">
           <p className="text-slate-500 text-sm mb-6 uppercase tracking-widest">Let's Connect</p>
           <div className="flex justify-center gap-6">
