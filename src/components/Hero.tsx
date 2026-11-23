@@ -97,7 +97,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="glass-card border-indigo-500/30 text-indigo-400 hover:bg-indigo-500/10 px-8 py-4 text-lg font-semibold hover-lift rounded-xl">
-              <a href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" download="Subhojeet_Ghosh_Resume.pdf" className="flex items-center gap-3">
+              <a href="/my-professional-portfolio/docs/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf" className="flex items-center gap-3">
                 <Download size={20} />
                 Download Resume
               </a>

@@ -69,7 +69,7 @@ const Navigation = () => {
                 Get in Touch
               </a>
               <Button asChild className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white px-5 py-2.5 text-sm font-semibold rounded-lg hover-lift">
-                <a href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" download="Subhojeet_Ghosh_Resume.pdf">
+                <a href="/my-professional-portfolio/docs/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf">
                   Resume
                 </a>
               </Button>
@@ -109,7 +109,7 @@ const Navigation = () => {
                 Get in Touch
               </a>
               <Button asChild className="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white py-3 px-6 text-sm font-semibold rounded-lg hover-lift">
-                <a href="/my-professional-portfolio/docs/resume-architect-Subhojeet_Ghosh.pdf" download="Subhojeet_Ghosh_Resume.pdf">
+                <a href="/my-professional-portfolio/docs/Subhojeet_Ghosh_Resume.pdf" download="Subhojeet_Ghosh_Resume.pdf">
                   Download Resume
                 </a>
               </Button>
