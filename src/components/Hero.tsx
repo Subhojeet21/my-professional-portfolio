@@ -10,6 +10,7 @@ const Hero = () => {
     "Enterprise Salesforce Architect",
     "Solution Architect",
     "Principal Engineer",
+    "Technical Architect",
     "Digital Transformation Leader",
     "Enterprise Integration Architect",
     "Platform Governance & Security Leader",
