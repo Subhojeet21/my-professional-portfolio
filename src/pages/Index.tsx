@@ -6,7 +6,7 @@ import ArchitectureExpertise from "@/components/ArchitectureExpertise";
 import CaseStudies from "@/components/CaseStudies";
 import ArchitectureCredentials from "@/components/ArchitectureCredentials";
 import AiInnovation from "@/components/AiInnovation";
-import ThoughtLeadership from "@/components/ThoughtLeadership";
+import KnowledgeSharing from "@/components/ThoughtLeadership";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 
@@ -41,7 +41,7 @@ const Index = () => {
       <CaseStudies />
       <ArchitectureCredentials />
       <AiInnovation />
-      <ThoughtLeadership />
+      <KnowledgeSharing />
       <Contact />
     </div>
   );

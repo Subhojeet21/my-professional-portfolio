@@ -21,7 +21,7 @@ const Navigation = () => {
     { href: "#expertise", label: "Architecture Expertise" },
     { href: "#credentials", label: "Architecture Credentials" },
     { href: "#ai-innovation", label: "Innovation Lab" },
-    { href: "#thought-leadership", label: "Thought Leadership" },
+    { href: "#knowledge-sharing", label: "Knowledge Sharing" },
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
   ];

@@ -1,87 +1,83 @@
-import { Book, Video, Users, FileText, Github, ExternalLink } from "lucide-react";
+import { Book, Video, GraduationCap, Users, ExternalLink } from "lucide-react";
 
-const ThoughtLeadership = () => {
+const KnowledgeSharing = () => {
   const channels = [
     {
       icon: Book,
-      title: "Architecture Articles",
-      subtitle: "Enterprise architecture insights and patterns",
+      title: "Technical Blog",
+      subtitle: "techietips99.wordpress.com",
       gradient: "from-sky-500 to-cyan-500",
+      href: "https://techietips99.wordpress.com/",
       points: [
-        "Salesforce integration architecture patterns",
-        "Enterprise AI governance frameworks",
-        "Multi-tenant compliance design",
-        "Revenue operations architecture"
+        "Documenting technical learnings and Salesforce experiences",
+        "Platform insights and implementation challenges",
+        "Solutions from real-world implementations",
+        "Technical best practices and lessons learned"
       ]
     },
     {
       icon: Video,
-      title: "YouTube & Talks",
-      subtitle: "Deep-dive architecture content",
+      title: "YouTube Channel",
+      subtitle: "@SubhojeetGhosh",
       gradient: "from-indigo-500 to-blue-500",
+      href: "https://www.youtube.com/@SubhojeetGhosh",
       points: [
-        "AgentForce implementation walkthroughs",
-        "Salesforce-AWS integration patterns",
-        "AI governance best practices",
-        "Enterprise data architecture deep-dives"
+        "Technology-related educational content",
+        "Learning resources and tutorials",
+        "Featured technical videos",
+        "Platform walkthroughs and demos"
+      ]
+    },
+    {
+      icon: GraduationCap,
+      title: "Continuous Learning Journey",
+      subtitle: "Ongoing professional development",
+      gradient: "from-violet-500 to-purple-500",
+      points: [
+        "MBA (Technology) — IIT Jodhpur",
+        "Salesforce Certifications",
+        "AWS Certification",
+        "Professional Scrum Master I",
+        "Lean Six Sigma Black Belt",
+        "Salesforce Platform Evolution",
+        "Enterprise Architecture Practices",
+        "Cloud Technologies",
+        "Digital Transformation Trends"
       ]
     },
     {
       icon: Users,
-      title: "Community Contributions",
-      subtitle: "Salesforce & enterprise architecture community",
-      gradient: "from-violet-500 to-purple-500",
-      points: [
-        "Architecture review contributions",
-        "Mentorship for emerging architects",
-        "Technical writing for community",
-        "Architecture pattern libraries"
-      ]
-    },
-    {
-      icon: FileText,
-      title: "AI Experiments",
-      subtitle: "Research and experimentation",
+      title: "Salesforce Ecosystem Engagement",
+      subtitle: "Sustained community participation",
       gradient: "from-emerald-500 to-teal-500",
       points: [
-        "Agentic system prototypes",
-        "LLM application patterns",
-        "AI governance tooling",
-        "Prompt engineering strategies"
-      ]
-    },
-    {
-      icon: Github,
-      title: "Open Source Work",
-      subtitle: "Architecture tooling and libraries",
-      gradient: "from-amber-500 to-orange-500",
-      points: [
-        "Salesforce platform extensions",
-        "Integration middleware tooling",
-        "Architecture validation patterns",
-        "Enterprise design systems"
+        "Salesforce Trailhead Ranger achievements",
+        "Continuous Salesforce learning",
+        "Architecture credential progression",
+        "Community-oriented mindset"
       ]
     }
   ];
 
   return (
-    <section id="thought-leadership" className="py-24 relative overflow-hidden">
+    <section id="knowledge-sharing" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 fade-in-section">
           <div className="inline-block px-6 py-3 rounded-full text-xs font-semibold tracking-[0.14em] uppercase section-kicker">
             <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse-dot mr-2" />
-            Thought Leadership
+            Knowledge Sharing & Community Contributions
           </div>
           <h2 className="section-title mb-6 text-center">
-            Shaping the Future of Enterprise Architecture
+            Sharing Knowledge, Growing Continuously
           </h2>
           <p className="section-subtitle">
-            Contributing to the enterprise architecture community through articles, talks, open source and AI experimentation.
+            Committed to continuous learning, knowledge sharing, professional
+            growth, and contributions to the Salesforce ecosystem.
           </p>
         </div>
 
-        {/* Thought Leadership Grid */}
+        {/* Channels Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {channels.map((channel) => (
             <div
@@ -89,7 +85,9 @@ const ThoughtLeadership = () => {
               className="relative glass-card-strong rounded-2xl p-8 hover-lift border border-slate-700/50 transform hover:scale-102 transition-transform duration-300 group"
             >
               <div className="mb-6">
-                <div className={`inline-flex p-2.5 rounded-lg ${channel.gradient} group-hover:scale-110 transition-transform duration-300`}>
+                <div
+                  className={`inline-flex p-2.5 rounded-lg ${channel.gradient} group-hover:scale-110 transition-transform duration-300`}
+                >
                   <channel.icon className="text-white" size={22} />
                 </div>
               </div>
@@ -115,9 +113,33 @@ const ThoughtLeadership = () => {
             </div>
           ))}
         </div>
+
+        {/* Knowledge Sharing Philosophy */}
+        <div className="mt-20 fade-in-section">
+          <div className="glass-card p-10 rounded-2xl border border-slate-700/50 max-w-3xl mx-auto text-center">
+            <p className="text-lg text-slate-300 leading-relaxed italic mb-6">
+              "Technology expertise becomes more valuable when shared. Through
+              writing, learning, certifications, and community-focused
+              contributions, I continuously invest in expanding my knowledge
+              while helping others navigate complex technology platforms and
+              enterprise solutions."
+            </p>
+            {channels.map((channel) => (
+              <a
+                key={channel.title}
+                href={channel.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sky-400 font-medium text-sm hover:text-sky-300 transition-colors"
+              >
+                <ExternalLink size={16} /> {channel.title}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default ThoughtLeadership;
+export default KnowledgeSharing;
